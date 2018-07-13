@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Navigation from './components/Navigation/Navigation';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
+import Signin from './components/signin/signin';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Logo from './components/Logo/Logo';
 import Rank from './components/Rank/Rank';
@@ -71,6 +72,7 @@ class App extends Component {
       <div className="App">
         <Particles className='particles' params={{particlesOptions}}/>
         <Navigation />
+        <Signin />
         <Logo />
         <Rank />
         <ImageLinkForm onInputChange={this.onInputChange} onButtonSubmit={this.onButtonSubmit} />
